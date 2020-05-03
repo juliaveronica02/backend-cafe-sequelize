@@ -7,7 +7,6 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 const menuRouter = require("./routes/Menu");
-const coffeRouter = require("./routes/Coffee");
 
 var app = express();
 
@@ -23,6 +22,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/menu", menuRouter);
-app.use("/coffee", coffeRouter);
+
+// app.listen(port, hostname, function () {
+//   console.log("Server running at http://" + hostname + ":" + port + "/");
+// });
 
 module.exports = app;

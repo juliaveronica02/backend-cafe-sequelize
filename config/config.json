@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Hallo123$",
-    "database": "cafe",
+    "database": "resto",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": "false"

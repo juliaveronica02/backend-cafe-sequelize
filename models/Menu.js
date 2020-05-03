@@ -7,16 +7,6 @@ const sequelize = new Sequelize(
   config.password,
   config
 );
-// const sequelize = new Sequelize("cafe", "root", "Hallo123$", {
-//   host: "localhost",
-//   dialect: "mysql",
-//   pool: {
-//     max: 5,
-//     min: 0,
-//     acquire: 30000,
-//     idle: 10000,
-//   },
-// });
 
 const Menu = sequelize.define(
   "menu",
@@ -41,4 +31,3 @@ const Menu = sequelize.define(
   { freezeTableName: true }
 );
 module.exports = Menu;
-// "menu" dari nama database yang telah dibuat, User dari atas saat create.
